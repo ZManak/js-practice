@@ -109,3 +109,48 @@ function conditionalEx1(num){
         console.log("The number is not valid")
     }
 }
+
+//OBJETOS - conjunto de propiedades y métodos
+/* Ejemplo:coche
+    car.name = "FIAT"
+    car.model = "500"
+    car.color = "white"
+    car.start();
+    car.drive();
+    car.stop();*/
+
+let cars = [{type:"FIAT", model:"500", color:"white", 'max-tara':1500}, {type:"Opel", model:"Corsa", color:"red", 'max-tara':1000}];
+
+const person = {
+    name : "Willy",
+    lastName: "Wonka",
+    fullName: function () {console.log(this.name + " "+this.lastName)}   
+}
+
+let coche = {
+    type: "Torpedo", 
+    model: "HyperSonic",
+    color: "purple",
+    'max-tara': 9999, 
+    drive: function(speed){
+        console.log("estás conduciendo a "+speed+" km/h")
+    },
+    getInfo: function (){
+        console.log(this.type,this.model,this.color,this['max-tara']);
+    }
+}
+
+//METODOS DE TEXTO
+
+function longitudArray() {
+let str = 'abcd'
+let longitud = str.length;
+console.log(longitud);
+}
+
+
+
+//documentación de arrays -> split() y join() -> str a arr y arr a str
+                            //pop quita al final / shift la quita al principio
+                            //splice añade nuevos elementos, slice los quita -pero mantiene el espacio
+                            //ver encontrar mayor numero y menor número de un array en 
